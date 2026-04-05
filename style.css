@@ -146,5 +146,59 @@ section {
     margin-bottom: var(--space-lg);
 }
 
+/* --- End of Mandatory Box Model Comments --- */
+
+/* State 1: Default unvisited link */
+a:link { 
+    color: var(--color-accent-alt); 
+    text-decoration: none; 
+}
+
+/* State 2: Visited link */
+a:visited { 
+    color: var(--color-muted); 
+}
+
+/* State 3: Hovered link */
+a:hover { 
+    color: var(--color-accent); 
+    text-decoration: underline; 
+}
+
+/* State 4: Active link (while being clicked) */
+a:active { 
+    color: var(--color-primary); 
+}
+
+/* Focus state for accessibility (as requested in the hint) */
+a:focus, input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-accent);
+}
+
+fieldset, figure {
+    background-color: #ffffff;
+    padding: var(--space-md);
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: none;
+}
+??
+/* 2. Nav Links (Adding slight curve for hover effects later) */
+nav a {
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+/* Fix Text Contrast in Dark Areas */
+header h1, 
+header p, 
+footer p, 
+footer small {
+    color: var(--color-surface);
+}
+
+
+
 
 
