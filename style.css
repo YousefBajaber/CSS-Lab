@@ -183,7 +183,15 @@ fieldset, figure {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     border: none;
 }
-??
+button {
+    border-radius: 6px;
+    padding: var(--space-sm) var(--space-md);
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    border: none;
+    cursor: pointer;
+}
+
 /* 2. Nav Links (Adding slight curve for hover effects later) */
 nav a {
     border-radius: 4px;
@@ -198,6 +206,56 @@ footer small {
     color: var(--color-surface);
 }
 
+/* =========================================
+   Task 3: Navigation & Header with Flexbox
+   ========================================= */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    
+    /* Make the nav bar sticky at the top */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures nav stays above all other content */
+}
+
+/* 2. Nav Link List: Wrap & Gap (Req 3) */
+nav ul {
+    display: flex;
+    flex-wrap: wrap; /* Allows links to wrap to a new line on small screens */
+    gap: var(--space-md); /* Adds perfect spacing between links */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Smooth Transitions for Links (Req 5) */
+nav a {
+    transition: color 0.2s ease, background-color 0.2s ease;
+    padding: 4px 8px; 
+    border-radius: 4px; 
+}
+
+/* Hover effect to trigger the transition */
+nav a:hover {
+    background-color: var(--color-surface); 
+    color: var(--color-primary);
+}
+
+/* 4. Active State (Req 6) */
+nav a.active {
+    color: var(--color-accent);
+    border-bottom: 3px solid var(--color-accent);
+    padding-bottom: 2px;
+}
+
+/* 5. Header as a Flexbox Row (Req 4) */
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
 
 
 

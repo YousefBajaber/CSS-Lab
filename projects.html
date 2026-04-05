@@ -2,55 +2,57 @@
 <html lang="en">
 <head> 
     <meta charset="UTF-8">
-    <title>Task 5: Media — Images & Figures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Yousef's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav>
-    <a href="index.html" class="logo">Yousef's Portfolio</a> 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="academic.html">Academic</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li> 
-        <li><a href="contact.html">Contact</a></li> 
-    </ul>
-</nav>
+        <a href="index.html" class="logo">Yousef's Portfolio</a> 
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="academic.html">Academic</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li> 
+            <li><a href="contact.html">Contact</a></li> 
+        </ul>
+    </nav>
 
-    <section id="profile-section">
-        <h2>My Profile</h2>
+    <header>
+        <div>
+            <h1>Yousef</h1>
+            <p>"Software Engineering Student at UTM"</p>
+        </div>
+        <div>
+            <img src="my-photo.jpg" alt="Profile Picture placeholder" width="150" height="150" style="background-color: var(--color-accent-alt); border-radius: 12px;">
+        </div>
+    </header>
+
+    <main>
         
-        <figure>
-            <img src="https://placehold.co/150x150/png?text=Profile+Photo" 
-                 alt="A Photo for profile" 
-                 width="150" 
-                 height="150" 
-                 title="Hovering over my profile picture!">
-            <figcaption>My Profile Photo</figcaption>
-        </figure>
-             
-        <p>
-            Hi! I'm a web developer. Welcome to my profile page!
-        </p>
+        <section id="project-section">
+            <h2>Featured Projects</h2>
+            <p>Here are some of the web applications and tools I have built.</p>
+
+            <figure>
+                <a href="https://github.com" target="_blank">
+                    <img src="https://placehold.co/600x350/png?text=Project+Screenshot" 
+                         alt="A screenshot showing the dashboard of my latest web application" 
+                         width="600" 
+                         height="350">
+                </a>
+                <figcaption>Screenshot of my latest web application dashboard. Click the image to visit the repository.</figcaption>
+            </figure>
         </section>
 
-    <hr>
+    </main>
 
-    <section id="project-section">
-        <h2>Featured Project</h2>
-
-        <figure>
-            <a href="https://github.com" target="_blank">
-                <img src="https://placehold.co/600x350/png?text=Project+Screenshot" 
-                     alt="A screenshot showing the dashboard of my latest web application" 
-                     width="600" 
-                     height="350">
-            </a>
-            <figcaption>Screenshot of my latest web application dashboard. Click the image to visit the live site.</figcaption>
-        </figure>
-    </section>
+    <footer>
+        <p>Remember: <mark>Consistency is the key</mark> to success.</p>
+        <small>&copy; 2026 My Portfolio. All rights reserved. Legal notice.</small>
+    </footer>
 
 </body>
 </html>
