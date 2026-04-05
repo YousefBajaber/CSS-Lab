@@ -314,29 +314,66 @@ header {
    Task 5 : Responsive Design with Media Queries 
    ========================================= */
 
-   /*
+/*
 BREAKPOINTS
 mobile-first base: 320px and up
 tablet: @media (min-width: 600px)
 desktop: @media (min-width: 1024px)
 */
 
-  /* First requirement:
-  – Adopt a mobile-first approach: base styles target 320px and up; enhancements at min-width: 600px 
-(tablet) and min-width: 1024px (desktop) */
-
-.page-cards {
-    grid-template-columns: 1fr;  
+/* Base styles (mobile) */
+nav ul {
+    display: flex;
+    flex-direction: column;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-cards,
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Tablet */
 @media (min-width: 600px) {
     .page-cards {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* make nav horizontal again */
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
+/* Desktop */
 @media (min-width: 1024px) {
     .page-cards {
         grid-template-columns: repeat(3, 1fr);
     }
-}
+
+    /* restore the 2-column page layout */
+    .layout {
+        grid-template-columns: 1fr 280px;
+    }
+
+    /* keep nav horizontal */
+    nav ul {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+} 
+
+
+
