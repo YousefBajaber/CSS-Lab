@@ -258,14 +258,29 @@ header {
 /* =========================================
    Page Layout with CSS Grid
    ========================================= */
-.cards {
+.page-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     justify-content: center;
     gap: 1.5rem;
 }
-.card {
+.page-cards {
     background: white;
     padding: 20px;
     border-radius: 10px;
 }
+/* Second Requirement */
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 1.5rem;
+}
+
+/* Third Requirement */
+
+.full-width {
+    grid-column: span 2;
+}
+
+
