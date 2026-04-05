@@ -283,4 +283,28 @@ header {
     grid-column: span 2;
 }
 
+/* Fifth Requirement */
+.page-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
+}
 
+.card {
+    background: #eee;
+    padding: 1rem;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 120px;
+
+    /* hover effect */
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
