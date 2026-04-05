@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 6: Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="contact-me">
+        <h2>Contact Me</h2>
+
+        <form action="#" method="post">
+            
+            <fieldset>
+                
+                <legend>
+                    Contact Information
+                </legend>
+
+                <div>
+                    <label for="fullName">Full Name:</label><br>
+                    <input type="text" id="fullName" name="fullName" required maxlength="50" placeholder="e.g. Yousef">
+                </div>
+
+                <div>
+                    <label for="emailAddr">Email Address:</label><br>
+                    <input type="email" id="emailAddr" name="emailAddr" required placeholder="name@example.com">
+                </div>
+
+                <div>
+                    <label for="phoneNum">Phone Number:</label><br>
+                    <input type="tel" id="phoneNum" name="phoneNum" placeholder="+60 123 456 789">
+                </div>
+
+             <div>
+                  <div>
+                    <label for="age">Your Age:</label><br>
+                    <input type="number" id="age" name="age" min="18" max="99" placeholder="18">
+                </div>
+
+                <div>
+                    <label for="meetingDate">Preferred Meeting Date:</label><br>
+                    <input type="date" id="meetingDate" name="meetingDate">
+                </div>
+
+                <div>
+                    <label for="budget">Estimated Budget ($):</label><br>
+                    <input type="range" id="budget" name="budget" min="100" max="5000">
+                </div>
+
+                <div>
+                    <label for="subject">Message Subject:</label><br>
+                    <select id="subject" name="subject">
+                        <optgroup label="General Inquiries">
+                            <option value="hello">Just saying Hello</option>
+                            <option value="feedback"> Feedback</option>
+                        </optgroup>
+                        <optgroup label="Business">
+                            <option value="freelance">Freelance </option>
+                            <option value="job">Job Opportunity</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div>
+                   <p>Preferred Contact Method:</p>
+
+                    <input type="radio" id="contactEmail" name="contactMethod" value="email" required>
+                    <label for="contactEmail">Email</label><br>
+
+                    <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+                    <label for="contactPhone">Phone</label><br>
+
+                    <input type="radio" id="contactWhatsapp" name="contactMethod" value="whatsapp">
+                    <label for="contactWhatsapp">WhatsApp</label><br>
+                </div>
+
+                <br>
+
+                <div>
+                 <label for="message">Your Message</label> <br>
+                 <textarea id="message" name="message" required placeholder="Write your details here.." rows="4" cols="40"></textarea>
+                </div>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </fieldset>
+        </form>
+    </section>
+
+</body>
+</html>
