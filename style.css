@@ -256,7 +256,7 @@ header {
 }
 
 /* =========================================
-   Page Layout with CSS Grid
+    Task 4: Page Layout with CSS Grid
    ========================================= */
 .page-cards {
     display: grid;
@@ -307,4 +307,36 @@ header {
 
 .card:hover {
     transform: translateY(-4px);
+}
+
+
+/* =========================================
+   Task 5 : Responsive Design with Media Queries 
+   ========================================= */
+
+   /*
+BREAKPOINTS
+mobile-first base: 320px and up
+tablet: @media (min-width: 600px)
+desktop: @media (min-width: 1024px)
+*/
+
+  /* First requirement:
+  – Adopt a mobile-first approach: base styles target 320px and up; enhancements at min-width: 600px 
+(tablet) and min-width: 1024px (desktop) */
+
+.page-cards {
+    grid-template-columns: 1fr;  
+}
+
+@media (min-width: 600px) {
+    .page-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .page-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
