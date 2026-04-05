@@ -375,5 +375,52 @@ header {
     }
 } 
 
+/* Make images responsive: */
+img {
+    max-width: 100%;
+    height: auto;
+}
+header img {
+    background-color: var(--color-accent-alt);
+    border-radius: 12px;
+}
+
+
+/* =========================================
+   Task 6 : Form Styling & Visual Polish  
+   ========================================= */
+
+/* Form styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Focus effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus,
+input[type="range"]:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px var(--color-accent-alt);
+}
+
+
 
 
