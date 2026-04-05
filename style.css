@@ -1,0 +1,60 @@
+/* =========================================
+   1. Google Fonts Import 
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+/* =========================================
+   2. Design Tokens and Variables (:root)
+   ========================================= */
+:root {
+    /* 2 Primary Colours */
+    --color-primary: #1a1a2e;
+    --color-secondary: #16213e;
+
+    /* 2 Accent Colours */
+    --color-accent: #e8d5b7;
+    --color-accent-alt: #d4a373;
+
+    /* 3 Neutral Greys */
+    --color-surface: #f5f4f0;
+    --color-muted: #666666;
+    --color-text: #1a1a1a;
+
+    /* 2 Font Families */
+    --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lora', Georgia, serif;
+
+    /* 3 Spacing Values */
+    --space-sm: 0.5rem;
+    --space-md: 1.5rem;
+    --space-lg: 3rem;
+}
+
+/* =========================================
+   3. CSS Reset Block
+   ========================================= */
+html {
+    
+    font-size: 62.5%; 
+}
+
+*, *::before, *::after {
+    /* Set box-sizing to border-box */
+    box-sizing: border-box;
+}
+
+body {
+   
+    margin: 0;
+    padding: 0;
+    
+    /* Apply :root variables for global styles */
+    font-family: var(--font-body);
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    
+    font-size: 1.6rem; 
+}
+
+
+
