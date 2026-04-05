@@ -471,11 +471,12 @@ ul li {
     border-top: 1px solid #ccc;
 }
 
-/* أول عنصر */
+
 ul li:first-child {
     border-top: none;
 }
 
-/* آخر عنصر */
+
 ul li:last-child {
     border-bottom: none;
+}
